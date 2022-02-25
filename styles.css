@@ -57,6 +57,8 @@ body {
   padding: 15px;
 }
 
+/* Código abaixo pego em https://stackoverflow.com/questions/13354578/custom-li-list-style-with-font-awesome-icon */
+
 ul {
   list-style: none;
   padding: 0;
@@ -128,6 +130,8 @@ a:active {
 
   position: fixed;
   z-index: -10;
+
+  /* Código abaixo pego em https://stackoverflow.com/questions/17069435/center-fixed-div-with-dynamic-width-css */
   right: 0;
   left: 0;
   margin-right: auto;
