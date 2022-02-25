@@ -29,6 +29,10 @@ body {
   max-width: 30%;
 }
 
+.name {
+  font-size: 20px;
+}
+
 .profilePicAndInfo {
   display: flex;
   gap: 20px;
