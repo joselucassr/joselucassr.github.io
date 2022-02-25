@@ -125,7 +125,7 @@ a:active {
 #line {
   stroke-dashoffset: 26008.431640625;
   stroke-dasharray: 26008.431640625;
-  animation: draw 10s linear infinite;
+  animation: draw 120s linear infinite;
   animation-direction: alternate;
 
   position: fixed;
