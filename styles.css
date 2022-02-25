@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html {
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+body {
+  padding: 50px;
+}
+
+#MainDiv {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+#ProfilePic {
+  /* width: 20%; */
+  height: 300px;
+  object-fit: cover;
+  box-shadow: #000 10px 10px;
+}
+
+#MainInfo {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  max-width: 30%;
+}
+
+.profilePicAndInfo {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 70%;
+}
+
+.infoElement {
+  width: fit-content;
+}
+
+.capabilities {
+  width: 20%;
+}
+
+.content {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.blackBGAndWhiteColor {
+  background-color: #000;
+  color: #fff;
+  padding: 15px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding-left: 1em;
+  line-height: 2;
+}
+
+li:before {
+  content: '↳'; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.5em; /* same as padding-left set on li */
+  width: 1em; /* same as padding-left set on li */
+}
+
+a {
+  font-weight: 700;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #eee;
+}
+
+.icons {
+  display: inline;
+  width: 1em;
+}
+
+.socialLinksGroup {
+  display: flex;
+  gap: 5px;
+}
+
+.socialLinksContainer {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 600px) {
+  #ProfilePic {
+    height: auto;
+    width: 100%;
+  }
+
+  #MainInfo {
+    max-width: 100%;
+  }
+
+  .capabilities {
+    width: 100%;
+  }
+
+  .profilePicAndInfo {
+    width: 100%;
+  }
+}
+
+#line {
+  stroke-dashoffset: 26008.431640625;
+  stroke-dasharray: 26008.431640625;
+  animation: draw 10s linear infinite;
+  animation-direction: alternate;
+
+  position: fixed;
+  z-index: -10;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100vh;
+  width: 100vw;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
