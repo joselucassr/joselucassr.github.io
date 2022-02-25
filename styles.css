@@ -103,7 +103,11 @@ a:active {
   gap: 20px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
   #ProfilePic {
     height: auto;
     width: 100%;
